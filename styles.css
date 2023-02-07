@@ -8,18 +8,21 @@
     padding: 8px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .title{
     color: #f9faf8;
     font-size: 24px;
     font-weight: bold;
+    margin-left: 15%;
 }
 
 ul{
     list-style-type: none;
     display: flex;
-    gap: 32px
+    gap: 32px;
+    margin-right: 15%;
 }
 
 li{
@@ -32,9 +35,18 @@ li{
 .hero{
     background-color: #1f2937;
     display: flex;
-    align-items: center;
-    
-    
+    /*align-items: center;
+    justify-content: center;*/
+    padding: 50px 0px;
+    gap: 100px;   
+}
+
+.hero-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+
 }
 
 .hero-title{
@@ -49,6 +61,10 @@ li{
     font-size: 18px;
     max-width: 500px;
     flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
 }
 
 .top-button{
@@ -59,28 +75,67 @@ li{
     border-radius: 8px;
     border: #3882f6;
     padding: 8px 16px;
+    max-width: 150px;
+    flex-grow: 0;
 }
 
 .hero-image{
+    color: #e5e7eb;
     background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin-right: 15%;
+
 }
 
 /*---------------------------------------------------------------*/
 /*----Info section CSS-------------------------------------------*/
-.info{
+img{
+    width: 200px;
+    height: 200px;
+}
+
+.section-info{
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px
     
+}
+
+.info-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
 }
 
 .info-title{
     color: #1f2937;
     font-size: 36px;
     font-weight: bolder;
+    margin-bottom: 50px;
+}
+
+.info-text{
+    min-width: 200px;
+    max-width: 200px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    color: grey; 
 }
 /*----------------------------------------------------------------*/
 /*----Quote section CSS-------------------------------------------*/
 .section-quote{
     background-color: #e5e7eb;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .quote, .credit{
@@ -89,15 +144,25 @@ li{
 
 .quote{
     font-style: italic;
+    font-size: 32px;
+    max-width: 800px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+
 }
 
-.credit{
+.quote > .credit{
     font-weight: bold;
+    font-size: 24px;
+    font-style: initial;
+    align-self: flex-end;
 }
 /*-----------------------------------------------------------------*/
 /*----call section CSS-------------------------------------------*/
-.call{
-    background-color: white;
+.section-call{
+    background-color: black;
+
 }
 
 .card
@@ -105,6 +170,12 @@ li{
     background-color: #3882f6;
     border-radius: 8px;
     color: white;
+    margin: 50px 15%;
+    padding: 32px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
 }
 
 .call-title{
@@ -118,13 +189,18 @@ li{
     border: solid white 2px;
     font-weight: bold;
     padding: 8px 16px;
+    
 }  
 /*---------------------------------------------------------------*/
 /*----Footer section CSS-------------------------------------------*/
 .footer{
     background-color: #1f2937;
     color: white;
-    padding: 16px;
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
  
