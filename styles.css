@@ -161,7 +161,10 @@ img{
 /*-----------------------------------------------------------------*/
 /*----call section CSS-------------------------------------------*/
 .section-call{
-    background-color: black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -171,11 +174,12 @@ img{
     border-radius: 8px;
     color: white;
     margin: 50px 15%;
-    padding: 32px 48px;
+    padding: 32px 112px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 900px;
+    gap: 48px;
 }
 
 .call-title{
